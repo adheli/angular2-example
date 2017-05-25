@@ -12,10 +12,10 @@ export class ChartExampleComponent implements OnInit {
   dataLineSet: number[] = [200, 185, 590, 621, 250, 400, 95];
 
   fillInDataSet(dataBarSet, dataLineSet) {
-    var barChartData = {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+    const barChartData = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [{
-        label: "Sales",
+        label: 'Sales',
         type: 'line',
         data: dataLineSet,
         fill: false,
@@ -29,7 +29,7 @@ export class ChartExampleComponent implements OnInit {
       },
       {
         type: 'bar',
-        label: "Visitor",
+        label: 'Visitor',
         data: dataBarSet,
         fill: false,
         backgroundColor: '#71B37C',
@@ -63,18 +63,18 @@ export class ChartExampleComponent implements OnInit {
             }
           }],
           yAxes: [{
-            type: "linear",
+            type: 'linear',
             display: true,
-            position: "left",
-            id: "y-axis-1",
+            position: 'left',
+            id: 'y-axis-1',
             gridLines: {
               display: false
             }
           }, {
-            type: "linear",
+            type: 'linear',
             display: true,
-            position: "right",
-            id: "y-axis-2",
+            position: 'right',
+            id: 'y-axis-2',
             gridLines: {
               display: false
             }
@@ -87,8 +87,8 @@ export class ChartExampleComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    var barChartData = this.fillInDataSet(this.dataBarSet, this.dataLineSet);
-    var myChart = this.createChart("myChart", barChartData);
+    const barChartData = this.fillInDataSet(this.dataBarSet, this.dataLineSet);
+    const myChart = this.createChart('myChart', barChartData);
   }
 
 }
