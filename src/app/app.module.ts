@@ -1,3 +1,4 @@
+import { CursosService } from './cursos/cursos.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core';
@@ -10,13 +11,15 @@ import { AppComponent } from './app.component';
 import { MeuPrimeiroComponent } from './meu-primeiro/meu-primeiro.component';
 import { MeuSegundoComponent } from './meu-segundo/meu-segundo.component';
 import { ChartExampleComponent } from './chart-example/chart-example.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MeuPrimeiroComponent,
     MeuSegundoComponent,
-    ChartExampleComponent
+    ChartExampleComponent,
+    DataBindingComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,9 @@ import { ChartExampleComponent } from './chart-example/chart-example.component';
     CursosModule,
     PrimeModuleModule
   ],
-  providers: [],
+  providers: [
+    CursosService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
