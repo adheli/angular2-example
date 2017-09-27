@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataBindingComponent } from './data-binding.component';
+import { ModalExampleComponent } from './modal-example.component';
 
-describe('DataBindingComponent', () => {
-  let component: DataBindingComponent;
-  let fixture: ComponentFixture<DataBindingComponent>;
+describe('ModalExampleComponent', () => {
+  let component: ModalExampleComponent;
+  let fixture: ComponentFixture<ModalExampleComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DataBindingComponent ]
+      declarations: [ ModalExampleComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DataBindingComponent);
+    fixture = TestBed.createComponent(ModalExampleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

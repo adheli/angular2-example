@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TableExampleComponent } from './table-example.component';
+import { ModalBootstrapComponent } from './modal-bootstrap.component';
 
-describe('TableExampleComponent', () => {
-  let component: TableExampleComponent;
-  let fixture: ComponentFixture<TableExampleComponent>;
+describe('ModalBootstrapComponent', () => {
+  let component: ModalBootstrapComponent;
+  let fixture: ComponentFixture<ModalBootstrapComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TableExampleComponent ]
+      declarations: [ ModalBootstrapComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TableExampleComponent);
+    fixture = TestBed.createComponent(ModalBootstrapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
